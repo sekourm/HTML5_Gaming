@@ -1,0 +1,48 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>My Runner Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/quintus_all.js"></script>
+</head>
+<body cz-shortcut-listen="true">
+
+<div id="quintus_container">
+    <canvas width="600" height="800" id="quintus" tabindex="0">
+        <p lang="fr">Votre navigateur ne supporte pas la balise canvas.</p>
+    </canvas>
+</div>
+
+<div class="contain_score" style="position: absolute;top:0%;left:80%;font-size:30px">
+    <div class="count">    <img src="images/stari.png" alt="stari" class="stari"/> <span class="score"></span></div>
+</div>
+
+<div class="contain_life" style="position: absolute;top:15%;left:80%;font-size:30px">
+
+    <div id="progressbar">
+        <img src="images/potion.png" alt="potion" class="potion"/>
+        <div id="loadingbar">
+            <span class="life"></span>
+        </div>
+    </div>
+</div>
+
+<div class="contain_sacha" style="position: absolute;top:1%;left:31%;">
+    <div id="ground">
+        <div id="me"></div>
+        <div id="get"></div>
+    </div>
+</div>
+
+<div class="contain_timer" style="position: absolute;top:7%;left:20%;">
+    <div class="timer">
+        <div class="hand"></div>
+    </div>
+    <div class="timerCount"></div>
+</div>
+
+<script src="js/runner.js"></script>
+
+</body>
+</html>
